@@ -75,6 +75,27 @@ void bubbleSort()
 	}
 }
 
+void merge(int l,int n,int m)
+{
+	int i=l,k=0,j=m+1;
+	int temp[n-l+1];
+
+	while(i<=m && j<=n)
+	{
+		if(data[i]<data[j])
+		{
+			temp[k]=data[i];
+			k++;
+			i++;
+		}
+		else
+		{
+			temp[k]=data[j];
+			k++;
+			j++;
+		}
+	}
+	
 void mergeSort()
 {
 	int m;
