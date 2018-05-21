@@ -68,7 +68,14 @@ void bubbleSort()
 
 void mergeSort()
 {
-	
+	int m;
+	if(l<n)
+	{
+		m=(l+n)/2;
+		mergeSort(l,m);
+		mergeSort(m+1,n);
+		merge(l,n,m);
+	}
 }
 
 void print()
