@@ -95,7 +95,26 @@ void merge(int l,int n,int m)
 			j++;
 		}
 	}
-	
+	while(i<=m)
+	{
+		temp[k]=data[i];
+		k++;
+		i++;
+	}
+
+	while(j<=n)
+	{
+		temp[k]=data[j];
+		k++;
+		j++;
+	}
+
+	for(i=l;i<=n;i++)
+	{
+		data[i]=temp[i-l];
+	}
+}
+
 void mergeSort()
 {
 	int m;
