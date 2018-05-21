@@ -1,3 +1,12 @@
+/*
+Nama Anggota Kelompok :
+Fadli Alvindra - 1717051026
+Adinda Rizky Febiyanto - 1717051042
+M.Reza Anggara - 1717051044
+Ilham Maulidan - 1757051008
+
+LINK GITHUB : https://github.com/SyncArf99/Tugas_Sorting/blob/master/Tugas_Sorting.cpp
+*/
 #include <iostream>
 using namespace std;
 
