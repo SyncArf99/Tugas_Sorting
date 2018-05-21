@@ -115,7 +115,7 @@ void merge(int l,int n,int m)
 	}
 }
 
-void mergeSort()
+void mergeSort(int l, int n)
 {
 	int m;
 	if(l<n)
