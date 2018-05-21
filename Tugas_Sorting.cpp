@@ -7,15 +7,17 @@ Ilham Maulidan - 1757051008
 
 LINK GITHUB : https://github.com/SyncArf99/Tugas_Sorting/blob/master/Tugas_Sorting.cpp
 */
+
 #include <iostream>
 using namespace std;
 
 void selectSort();
 void bubbleSort();
-void mergeSort();
+void merge(int,int,int);
+void mergeSort(int,int);
 void print();
 
-int data[100],n;
+int data[100],l,m,n;
 int main ()
 {
 	int p;
@@ -32,7 +34,7 @@ int main ()
 	{
 		case 1: selectSort(); cout<<"\nData sesudah Sorting : "; print(); break;
 		case 2: bubbleSort(); cout<<"\nData sesudah Sorting : "; print(); break;
-		case 3: mergeSort(); cout<<"\nData sesudah Sorting : "; print(); break;
+		case 3: mergeSort(0,n-1); cout<<"\nData sesudah Sorting : "; print(); break;
 		default: cout<<"Pilihan tidak ada\n"; goto ulang;;
 	}
 	return 0;
@@ -95,6 +97,7 @@ void merge(int l,int n,int m)
 			j++;
 		}
 	}
+
 	while(i<=m)
 	{
 		temp[k]=data[i];
